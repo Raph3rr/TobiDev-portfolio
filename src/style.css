@@ -887,6 +887,10 @@ main {
   .home-about-section {
     padding: 4.5rem 0;
   }
+  .home-about-section .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   .home-about-description {
     padding: 0 !important;
