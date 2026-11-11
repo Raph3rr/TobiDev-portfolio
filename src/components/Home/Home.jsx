@@ -13,7 +13,7 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
-            <Col className="home-header">
+            <Col xs={12} className="home-header">
               <h1 className="heading">Hi There!</h1>
               <h1 className="heading-name">
                 I'M

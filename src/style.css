@@ -887,10 +887,20 @@ main {
   .home-about-section {
     padding: 4.5rem 0;
   }
-  .home-about-section .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
+  .home-content,
+.home-about-section > .container {
+  width: min(100% - 3.5rem, var(--content-width));
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 25px;
+}
+
+.home-content > .row,
+.home-about-section .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 
   .home-about-description {
     padding: 0 !important;
