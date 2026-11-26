@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import pdf from "../../Assets/CV1.pdf";
-import pdf2 from "../../Assets/CV2.pdf";
+import pdf from "../../Assets/OLASEIGBE RAPHAEL CV.pdf";
+import pdf2 from "../../Assets/OLASEIGBE RAPHAEL CV2.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
@@ -28,7 +28,12 @@ function ResumeNew() {
   }, []);
 
   const downloadLink = (
-    <a className="btn-primary" href={pdf2} target="_blank" rel="noopener noreferrer">
+    <a
+      className="btn-primary"
+      href={pdf}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <AiOutlineDownload aria-hidden="true" /> Download CV
     </a>
   );
@@ -39,7 +44,7 @@ function ResumeNew() {
         <div className="resume-actions">{downloadLink}</div>
         <div className="resume">
           <div className="resume-document">
-            <Document file={pdf} className="d-flex justify-content-center">
+            <Document file={pdf2} className="d-flex justify-content-center">
               <Page pageNumber={1} width={pageWidth} />
             </Document>
           </div>
